@@ -1,0 +1,18 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'global.css' %}">
+</head>
+
+<body>
+
+<h1>{{ myStation.name }} {{ myStation.description }}</h1>
+  
+<p>Date: {{ myStation.creationDate }}</p>
+
+<p>Back to <a href="/">station</a></p>
+
+</body>
+</html>

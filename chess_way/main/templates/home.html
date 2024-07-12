@@ -1,0 +1,64 @@
+{% load static %}
+
+<!DOCTYPE html>
+<head>
+    <lang="en"></lang>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Cafe</title>
+    <link rel="stylesheet" href="{% static 'styles/home.css'%}">
+</head>
+<div class="Inwhichlabel" id="0"></div>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <div class="logo">
+                    <img src="{% static 'icons/chess_logo.svg'%}" alt="Logo">
+                </div>
+            </div>
+            <div class="header-center">
+                <div class="search-bar">
+                    <img src="{% static 'icons/compass.svg'%}" alt="Compass Icon">
+                    <input type="text" placeholder="Search...">
+                    <img src="{% static 'icons/close.svg'%}" alt="Close Icon">
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="coffee-icon">
+                    <div class="user-auth">
+                        {% if user.is_authenticated %}
+                        <a href="{% url 'logout' %}" class="auth-button">Log out</a>
+                        <a><img src="{% static 'icons/local_coffee.svg'%}" alt="Coffee Icon"></a>
+                        {% else %}
+                        <a href="{% url 'login' %}" class="auth-button">Log in</a>
+                        <a href="{% url 'register' %}" class="auth-button">Register</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <nav class="labels">
+                <span class="label active">All</span>
+                <span class="label">Mine</span>
+                <span class="label">Shared</span>
+                <span class="label">Favourite</span>
+                <span class="label">Saved</span>
+            </nav>
+            <div class="folders">
+                {% for x in myStations %}
+                        <div class="folder">
+                            <a href="details/{{ x.id }}" class="home_station">
+                                <img class="carpet_image" src="{% static 'icons/folder.svg'%}" alt="Folder Icon">
+                                <span>{{ x.name }}</span>
+                            </a>
+                        </div>
+                {% endfor %}
+            </div>
+        </main>
+    </div>
+    <script type="text/javascript" src="{% static 'js/home.js'%}"></script>
+</body>
+      
+    

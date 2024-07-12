@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #081720;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+main{
+    width: 60%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+.header-left,
+.header-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.header-right {
+    justify-content: flex-end; /* Aligns items to the right */
+}
+
+.header-center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img, .coffee-icon img {
+    height: 40px;
+}
+
+.coffee-icon{
+    margin-right: 40px;
+}
+
+.logo img{
+    margin-left: 40px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: snow;
+    border-radius: 20px;
+    padding: 5px 10px;
+    width: 50%;
+}
+
+.search-bar img {
+    height: 20px;
+    margin: 0 5px;
+}
+
+.search-bar input {
+    border: none;
+    background: none;
+    color: #081720;
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+nav.labels {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.label {
+    color: gray;
+    border-bottom: 2px solid gray;
+    padding: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.label.active {
+    border-bottom: 2px solid white;
+    background-color: #ffffff33; /* Different background for active label */
+    color: white; /* Text color for active label */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.folders {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.folder {
+    text-align: center;
+}
+
+.home_station { 
+    width: 100px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    overflow: hidden;
+}
+
+.home_station img {
+    height: 80px;
+    width: 80px;
+}
+
+.home_station span {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.user-auth {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.auth-button {
+    background-color: #ffffff33;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.auth-button:hover {
+    background-color: #ffffff66;
+    scale: 1.05;
+
+    transition: all 0.3s ease-in-out;
+}

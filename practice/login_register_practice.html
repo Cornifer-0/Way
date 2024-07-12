@@ -1,0 +1,61 @@
+
+<head>
+    <link rel="stylesheet" href="login.css"/>
+</head>
+
+<div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="login__page">
+        <form method="POST" action="" id="loginsetup">
+
+            <div class="input__container">
+                <label class="input__label">Username:</label>
+                <input class="username__input" type="text" name="username" placeholder="Username"/>
+            </div>
+
+            <div class="input__container">
+                <label class="input__label">Password:</label>
+                <input class="username__input" type="password" name="password" placeholder="Password"/>
+            </div>
+
+            <input class="submit__button" type="submit" value="Login"/>
+        </form>
+
+        <p>Haven't signed up yet?</p>
+        <a href="{% url 'register' %}">Sign Up</a>
+            <ul class="messages">
+                <br>
+                <br>
+                <br>
+                    <li>{{message}}</li>
+            </ul>
+
+    </div>
+
+
+    <div>
+        <form method="POST" action="" class="register__form" >
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type="submit" value="Register"/>
+
+            <br>
+            <br>
+            <p>Already signed up?</p>
+            <a href="/practice_html.html">Log in</a>
+        </form>
+
+    </div>
+
+</div>

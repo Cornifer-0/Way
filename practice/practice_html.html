@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Cafe</title>
+    <link rel="stylesheet" href="practice_css.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <div class="logo">
+                    <img src="icons/chess_logo.svg" alt="Logo">
+                </div>
+            </div>
+            <div class="header-center">
+                <div class="search-bar">
+                    <img src="icons/compass.svg" alt="Compass Icon">
+                    <input type="text" placeholder="Search...">
+                    <img src="icons/close.svg" alt="Close Icon">
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="coffee-icon">
+                    <img src="icons/local_coffee.svg" alt="Coffee Icon">
+                    <div class="user-auth">
+                        <a href="{% url 'login' %}" class="auth-button">Login</a>
+                        <a href="{% url 'register' %}" class="auth-button">Register</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <nav class="labels">
+                <span class="label active">All</span>
+                <span class="label">Mine</span>
+                <span class="label">Shared</span>
+                <span class="label">Favourite</span>
+                <span class="label">Saved</span>
+            </nav>
+            <div class="folders">
+                <!--this is where it loops foreach station-->
+                <div class="folder">
+                    <a href="" class="home_station">
+                        <img src="icons/folder.svg" alt="Folder Icon">
+                        <span>Sicilian defense</span>
+                    </a>
+                </div>
+                <div class="folder">
+                    <a href="" class="home_station">
+                        <img src="icons/folder.svg" alt="Folder Icon">
+                        <span>Sicilian defense super extra mega opening 100% functoinal for 200ELO</span>
+                    </a>
+                </div>
+                <div class="folder">
+                    <a href="" class="home_station">
+                        <img src="icons/folder.svg" alt="Folder Icon">
+                        <span>Sicilian defense</span>
+                    </a>
+                </div>
+                <div class="folder">
+                    <a href="" class="home_station">
+                        <img src="icons/folder.svg" alt="Folder Icon">
+                        <span>Sicilian defense</span>
+                    </a>
+                </div>
+                <div class="folder">
+                    <a href="" class="home_station">
+                        <img src="icons/folder.svg" alt="Folder Icon">
+                        <span>Sicilian defense</span>
+                    </a>
+                </div>
+                <div class="folder">
+                    <a href="" class="home_station">
+                        <img src="icons/folder.svg" alt="Folder Icon">
+                        <span>Sicilian defense</span>
+                    </a>
+                </div>
+                <div class="folder">
+                    <a href="" class="home_station">
+                        <img src="icons/folder.svg" alt="Folder Icon">
+                        <span>Sicilian defense</span>
+                    </a>
+                </div>
+                <div class="folder">
+                    <a href="" class="home_station">
+                        <img src="icons/folder.svg" alt="Folder Icon">
+                        <span>Sicilian defense</span>
+                    </a>
+                </div>
+                <div class="folder">
+                    <a href="" class="home_station">
+                        <img src="icons/folder.svg" alt="Folder Icon">
+                        <span>Sicilian defense</span>
+                    </a>
+                </div>
+                <div class="folder">
+                    <a href="" class="home_station">
+                        <img src="icons/folder.svg" alt="Folder Icon">
+                        <span>Sicilian defense</span>
+                    </a>
+                </div>
+                <div class="folder">
+                    <a href="" class="home_station">
+                        <img src="icons/folder.svg" alt="Folder Icon">
+                        <span>Sicilian defense</span>
+                    </a>
+                </div>
+                <div class="folder">
+                    <a href="" class="home_station">
+                        <img src="icons/folder.svg" alt="Folder Icon">
+                        <span>Sicilian defense</span>
+                    </a>
+                </div>
+                <div class="folder">
+                    <a href="" class="home_station">
+                        <img src="icons/folder.svg" alt="Folder Icon">
+                        <span>Sicilian defense</span>
+                    </a>
+                </div>
+                <div class="folder">
+                    <a href="" class="home_station">
+                        <img src="icons/folder.svg" alt="Folder Icon">
+                        <span>Sicilian defense</span>
+                    </a>
+                </div>
+                <div class="folder">
+                    <a href="" class="home_station">
+                        <img src="icons/folder.svg" alt="Folder Icon">
+                        <span>Sicilian defense</span>
+                    </a>
+                </div>
+                <div class="folder">
+                    <a href="" class="home_station">
+                        <img src="icons/folder.svg" alt="Folder Icon">
+                        <span>Sicilian defense</span>
+                    </a>
+                </div>
+                <div class="folder">
+                    <a href="" class="home_station">
+                        <img src="icons/folder.svg" alt="Folder Icon">
+                        <span>Sicilian defense</span>
+                    </a>
+                </div>
+                <div class="folder">
+                    <a href="" class="home_station">
+                        <img src="icons/folder.svg" alt="Folder Icon">
+                        <span>Sicilian defense</span>
+                    </a>
+                </div>
+                <div class="folder">
+                    <a href="" class="home_station">
+                        <img src="icons/folder.svg" alt="Folder Icon">
+                        <span>Sicilian defense</span>
+                    </a>
+                </div>
+                <div class="folder">
+                    <a href="" class="home_station">
+                        <img src="icons/folder.svg" alt="Folder Icon">
+                        <span>Sicilian defense</span>
+                    </a>
+                </div>
+                <!--this would be the end of the loop-->
+            </div>
+        </main>
+    </div>
+    <script type="text/javascript" src="practice_js.js"></script>
+</body>
+</html>
